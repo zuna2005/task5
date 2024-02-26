@@ -50,6 +50,7 @@ app.post('/table', (req, res) => {
     return res.send(errUsers) 
 })
 
-app.listen(process.env.PORT, () => {
+const PORT = process.env.PORT || 8081
+app.listen(PORT, () => {
     console.log('listening')
 })
